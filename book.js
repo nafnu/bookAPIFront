@@ -1,14 +1,16 @@
 const mongoose = require('mongoose')
-const {Schema} = mongoose;
- 
+const {
+  Schema
+} = mongoose;
+
 const bookSchema = new Schema({
-    title : String,
-    author : String,
-    ISBN : Number,
-    yearPublication : Number, 
-    publishingHouse : String
-  
-  })
+  title: String,
+  author: String,
+  ISBN: Number,
+  yearPublication: Number,
+  publishingHouse: String
+
+})
 
 const Book = mongoose.model('Book', bookSchema);
 //const book = new Book({_title:"The Remains of the Day", _author:"Kazuo Ishiguro", _ISBN: 0571153100, _yearPublication: 1989, _publishingHouse:"Faber"})
@@ -31,7 +33,7 @@ module.exports = Book
 
 //     get title(){
 //         return this._title;
-        
+
 //     }
 //     setTitle(t){
 //         this._title = t;
@@ -39,7 +41,7 @@ module.exports = Book
 
 //     get author(){
 //         return this._author;
-        
+
 //     }
 //     setAuthor(h){
 //         this._author = h;
@@ -47,7 +49,7 @@ module.exports = Book
 
 //     get ISBN(){
 //         return this._ISBN;
-        
+
 //     }
 //     setISBN(b){
 //         this._ISBN = b;
@@ -55,7 +57,7 @@ module.exports = Book
 
 //     get yearPublication(){
 //         return this._yearPublication;
-        
+
 //     }
 //     setYearPublication(y){
 //         this._yearPublication = y;
@@ -63,7 +65,7 @@ module.exports = Book
 
 //     get publishingHouse(){
 //         return this._publishingHouse;
-        
+
 //     }
 //     setPublishingHouse(p){
 //         this._publishingHouse = p;

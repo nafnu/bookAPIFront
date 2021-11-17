@@ -1,23 +1,23 @@
-
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
 const mongoose = require('mongoose')
 const Book = require('./book.js')
-
 //const path = require('path');
 
 
 //app plugins or labraries
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({
+  extended: false
+}))
 
 //API ROUTES
 
 //SHOW all dogs from the database using GET request
 app.get('/book', (req, res) => {
   Book.find((err, books) => {
-      if (err) {
+    if (err) {
       res.send("Error occured no book retrieved")
       return
     }
@@ -29,7 +29,7 @@ app.get('/book', (req, res) => {
 // FIND ONE BY ID, using a GET REQUEST and A PARAMETER (id)
 app.get('/book/:id', (req, res) => {
   const id = req.params.id;
-   Book.findById(id, (err, book) => {
+  Book.findById(id, (err, book) => {
     if (err) {
       res.send("Book not found")
       return
@@ -44,16 +44,16 @@ app.get('/book/:id', (req, res) => {
 app.post('/book', (req, res) => {
   console.log("Inserting a book in the database")
   let book = new Book({
-    title: req.body.title, 
-    author: req.body.author, 
-    ISBN: parseInt(req.body.ISBN), 
-    yearPublication: parseInt(req.body.yearPublication), 
+    title: req.body.title,
+    author: req.body.author,
+    ISBN: parseInt(req.body.ISBN),
+    yearPublication: parseInt(req.body.yearPublication),
     publishingHouse: req.body.publishingHouse,
   });
   book.save(err => {
     if (err) {
-        res.send(`Book not inserted into the database, error is: ${err}`)
-        return
+      res.send(`Book not inserted into the database, error is: ${err}`)
+      return
     }
     res.send("Book inserted into the database")
     console.log("Book is in the database")
@@ -98,7 +98,7 @@ app.put('/book/:id', (req, res) => {
 //START the server
 app.listen(port, () => {
   mongoose.connect('mongodb+srv://admin:ADMIN@bookapi.d2gse.mongodb.net/myFirstDatabase?retryWrites=true&w=majority').
-    catch(error => console.log(error));
+  catch(error => console.log(error));
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
@@ -180,4 +180,3 @@ app.listen(port, () => {
 // app.listen(port, () => {
 //   console.log(`Example app listening at http://localhost:${port}`)
 // })
-
