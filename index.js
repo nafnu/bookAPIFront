@@ -3,7 +3,10 @@ const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
 const mongoose = require('mongoose')
+
+//classes
 const Book = require('./book.js')
+const Notebook = require('./notebook')
 //const path = require('path');
 
 
@@ -25,6 +28,18 @@ app.get('/book', (req, res) => {
     console.log(books)
   })
 })
+
+app.get('/notebook', (req, res) => {
+  Notebook.find((err, notebooks) => {
+    if (err) {
+      res.status(404).send(err)
+      return
+    }
+    res.status(200).send(notebooks)
+    console.log(notebooks)
+  })
+})
+
 
 // FIND ONE BY ID, using a GET REQUEST and A PARAMETER (id)
 app.get('/book/:id', (req, res) => {

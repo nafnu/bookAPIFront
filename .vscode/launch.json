@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "pwa-chrome",
+            "name": "https://github.com/nafnu/bookAPI.git",
+            "request": "launch",
+            "url": "https://github.com/nafnu/bookAPI.git"
+           
+        }
+    ]
+}
