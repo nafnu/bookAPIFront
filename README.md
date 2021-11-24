@@ -16,24 +16,24 @@ Develop a web application API using Node.js that can perform CRUD operations on 
 
 ## Running the Project
 To use this run: 
-- npm init (to initialize your Node.Js project).
-– npm install express (to install express for routes).
-– npm install mongoose (to install the mongodb database driver).
-– npm install bodyparser (to be able to use multiple http requests).
-– npm install –g nodemon (restarts the application when you save the document).
+- npm init (to initialize your Node.Js project).<br>
+– npm install express (to install express for routes).<br>
+– npm install mongoose (to install the mongodb database driver).<br>
+– npm install bodyparser (to be able to use multiple http requests).<br>
+– npm install –g nodemon (restarts the application when you save the document).<br>
 Works with Postman localhost: 3000
 
 ## Project Summary
 In this project, I learned how to do uses Postman, how to create a Mongo database and how to connect Postman to a database. Postman was used as an API testing tool, not as a database testing tool. Data queries were performed to retrieve, insert, or delete data from the database. Postman created those values directly in a variable. And those values were verified concerning the answer.
 
-## Initial Ideas
+### Initial Ideas
 After a brief explanation about the Javascript language, each of us made a selection of the topic and the class that we would develop individually. The project was coded from scratch following the teacher's instructions. In my case, I choose "Book" as the object class to work with. I think it could be a very complex class. However, just for a proper learning process, I did not incorporate multiple complex types of variables
 
 ### Contextualizing
 Book as a class. <br>
 Title, author, ISBN, yearPublication and publishingHouse as characteristics of the object.
 
-#### Development Process. 
+## Development Process. 
 1. Created the Book Class.
 2. Install Node.js. 
 3. Install and establish a connection with Postman. In computer programming, create, read, update, and delete (CRUD) are the four basic functions of persistent storage.
@@ -44,7 +44,7 @@ Title, author, ISBN, yearPublication and publishingHouse as characteristics of t
 4. Set up the link to your Atlas/MongoDB database. That includes logging into Atlas, clicking on the Clusters tab and then clicking Connect.
 5. Set up the schema to work with Atlas and Postman. Also, that includes to modified our CRUD previous coding.
 
-#### Libraries 
+### Libraries 
 1. Express
 2. BodyParser
 3. Mongoose
