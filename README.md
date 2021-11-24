@@ -16,11 +16,11 @@ Develop a web application API using Node.js that can perform CRUD operations on 
 
 ## Running the Project
 To use this run: 
-- npm init (to initialize your Node.Js project)
-– npm install express (to install express for routes)
-– npm install mongoose (to install the mongodb database driver)
-– npm install bodyparser (to be able to use multiple http requests)
-– npm install –g nodemon (restarts the application when you save the document) <br>
+- npm init (to initialize your Node.Js project).
+– npm install express (to install express for routes).
+– npm install mongoose (to install the mongodb database driver).
+– npm install bodyparser (to be able to use multiple http requests).
+– npm install –g nodemon (restarts the application when you save the document).
 Works with Postman localhost: 3000
 
 ## Project Summary
