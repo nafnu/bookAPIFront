@@ -56,6 +56,8 @@ Based on the project:
 ## Testing
 Example of get:
 
+![postmaExample](https://user-images.githubusercontent.com/65398774/143224634-8042b8f1-253f-4f2d-b000-e1903363f519.png)
+
 
 ## Considerations
 It is a first part of the project with need to implement all the front-end later on with React App. 
