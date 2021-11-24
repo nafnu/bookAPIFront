@@ -15,13 +15,13 @@ Develop a web application API using Node.js that can perform CRUD operations on 
 [10%] Creativity: Do your own research and add any other functionality to your application.(e.g. multiple variable types – Boolean, array, json array, etc.; basic front-end; database complexity; multiple objects, etc.)
 
 ## Running the Project
-To use this run: 
+1. To use this run: 
 - npm init (to initialize your Node.Js project).<br>
-– npm install express (to install express for routes).<br>
-– npm install mongoose (to install the mongodb database driver).<br>
-– npm install bodyparser (to be able to use multiple http requests).<br>
-– npm install –g nodemon (restarts the application when you save the document).<br>
-Works with Postman localhost: 3000
+- npm install express (to install express for routes).<br>
+- npm install mongoose (to install the mongodb database driver).<br>
+- npm install bodyparser (to be able to use multiple http requests).<br>
+- npm install –g nodemon (restarts the application when you save the document).<br>
+2. Works with Postman localhost: 3000
 
 ## Project Summary
 In this project, I learned how to do uses Postman, how to create a Mongo database and how to connect Postman to a database. Postman was used as an API testing tool, not as a database testing tool. Data queries were performed to retrieve, insert, or delete data from the database. Postman created those values directly in a variable. And those values were verified concerning the answer.
