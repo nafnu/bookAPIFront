@@ -36,15 +36,15 @@ Title, author, ISBN, yearPublication and publishingHouse as characteristics of t
 ## Development Process. 
 1. Created the Book Class.
 2. Install Node.js. 
-3. Install and establish a connection with Postman. In computer programming, create, read, update, and delete (CRUD) are the four basic functions of persistent storage.  All these functions are connected with MongoDB with a URL. And works with MongoDB a single collection. 
-• Create (post request with Postman).
-It will be with the function insetOne the colletion. 
-• Read (get request with Postman).
-It will be with the function users.find.
-• Update (put request with Postman).
-It will be with the function updateMany.
-• Delete (delete request with Postman).
-It will be with the function deleteMany.
+3. Install and establish a connection with Postman. In computer programming, create, read, update, and delete (CRUD) are the four basic functions of persistent storage.  All these functions are connected with MongoDB with a URL. And works with MongoDB a single collection. <br>
+- Create (post request with Postman).<br>
+It will be with the function insetOne the colletion. <br>
+- Read (get request with Postman).<br>
+It will be with the function users.find.<br>
+- Update (put request with Postman).<br>
+It will be with the function updateMany.<br>
+- Delete (delete request with Postman).<br>
+It will be with the function deleteMany.<br>
 4. Set up the link to your Atlas/MongoDB database. That includes logging into Atlas, clicking on the Clusters tab and then clicking Connect.
 5. Set up the schema to work with Atlas and Postman. Also, that includes to modified our CRUD previous coding.
 
