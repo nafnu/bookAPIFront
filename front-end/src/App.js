@@ -3,14 +3,14 @@ import{ Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import CarouselContainer from './components/CarouselContainer';
 
-import Book from './components/Book';
+import Books from './components/Books';
 
 function App() {
   return (
     <div className="App">
         <CarouselContainer />
     <Routes>
-             <Route path='/' element={<Book />} />
+             <Route path='/' element={<Books />} />
       </Routes>
 
     </div>

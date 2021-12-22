@@ -2,7 +2,8 @@
 import React from "react";
 import axios from 'axios';
 
-class Book extends React.Component{
+
+class Books extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -56,10 +57,11 @@ class Book extends React.Component{
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Breed</th>
-                            <th>Neutred</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th>Year Publication</th>
+                            <th>Publishing House</th>
                         </tr>
                     </thead>
 
@@ -67,9 +69,11 @@ class Book extends React.Component{
                         {books.map(book => (
                         <tr key={book._id}>
                             <td>{book._id}</td>
-                            <td>{book._title}</td>
-                            <td >{book._author}</td>
-                            <td >{book._ISBN}</td>
+                            <td>{book.title}</td>
+                            <td >{book.author}</td>
+                            <td >{book.ISBN}</td>
+                            <td >{book.yearPublication}</td>
+                            <td >{book.publishingHouse}</td>
                     </tr>
                     ))}
                     </tbody> 
@@ -81,4 +85,4 @@ class Book extends React.Component{
 }
     
 
-export default Book;
+export default Books;
