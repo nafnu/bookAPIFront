@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+}
+
+.w-100 {
+  width: 100% !important;
+  height: 75vh;
 }
 
 .App-logo {
