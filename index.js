@@ -17,8 +17,6 @@ app.use(bodyParser.urlencoded({
 
 
 
-
-
 //API ROUTES
 
 //SHOW all dogs from the database using GET request
@@ -33,16 +31,6 @@ app.get('/book', (req, res) => {
   })
 })
 
-app.get('/notebook', (req, res) => {
-  Notebook.find((err, notebooks) => {
-    if (err) {
-      res.status(404).send(err)
-      return
-    }
-    res.status(200).send(notebooks)
-    console.log(notebooks)
-  })
-})
 
 
 // FIND ONE BY ID, using a GET REQUEST and A PARAMETER (id)
