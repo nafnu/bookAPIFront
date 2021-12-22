@@ -1,12 +1,12 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const port = 3000
+const port = 4000
 const mongoose = require('mongoose')
 
 //classes
 const Book = require('./book.js')
-const Notebook = require('./notebook')
+// const Notebook = require('./notebook')
 //const path = require('path');
 
 
@@ -14,6 +14,10 @@ const Notebook = require('./notebook')
 app.use(bodyParser.urlencoded({
   extended: false
 }))
+
+
+
+
 
 //API ROUTES
 
@@ -117,81 +121,3 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-
-//*********** OLD CODE - BEFORE SCHEMA OF MONGODB - NOT REQUIRED!  ONLY FOR REFERENCE *************
-
-// app.post('/book', (req,res)=>{
-//   console.log("Inserting a book in the database")
-//   book.save()
-//   res.send("Book saved")
-
-// })
-
-//*********** OLD CODE!  - NORMAL CONSTRUCTOR TO CONNECT WITH POSTMAN - NOT REQUIRED!  ONLY FOR REFERENCE *************
-
-// let book1 = new Book('The Remains of the Day', 'Kazuo Ishiguro', 0571153100, 1989, 'Faber');
-// let book2 = new Book('The Shoemaker and his daughter', 'Conor OClery', 9781784163112, 2018, 'Penguin');
-
-// let books = [book1, book2]
-
-
-// app.get('/', (req, res) => {
-//   res.send('Hello Nathalie!')
-// })
-
-// app.get('/message', (req, res) => {
-//   res.send('Hi, this is a nice message')
-// })
-
-// app.get('/othermessage', (req, res) => {
-//   res.send('This is a second message')
-// })
-
-// app.get('/showbook', (req, res) => {
-//   console.log('Someone is requiring a book:')
-//   res.send(books)
-// })
-
-// app.post('/showbook', (req, res) => {
-//   //insert using post!
-//   console.log('Someone is requiring a book:');
-//   res.send('Congrats, you posted something');
-//   console.log(req.body);
-//   // let title = req.body.title;
-//   // let author = req.body.author;
-//   // let ISBN = parseInt(req.body.ISBN);
-//   // let yearPublication = req.body.title);
-//   // let publishingHouse = req.body.publishingHouse);
-//   let book3 = new Book(req.body.title, req.body.author, parseInt(req.body.ISBN), req.body.title, req.body.publishingHouse);
-//   books.push(book3) 
-//   console.log(book3)
-
-// })
-
-
-// app.delete('/deletebook/:title', (req, res) => {
-//   //"books" is the database
-//   //newbooksArray is a holder for the updated Database
-//   let newBooksArray =[];
-//   //for loop in JavaScript, takes each element and assigns it to the variable "d"
-//   //
-//   books = books.forEach(d =>{
-//     //checks to see if the name from the parameter matches the dogs name
-//     if(!(d._title === req.params.title)){
-//       //if it doesn't match, add it to the new array
-//        newBooksArray.push(d)
-//     }
-//   })
-//   console.log("Book deleted, new database looks like this")
-//   console.log(newBooksArray);
-//   //update the "database / dogs"
-//   books = newBooksArray;
-//   //send a result to postman/user so it doesn't get stuck on loading
-//   res.send("Delete in progress");
-
-//   console.log(req.params);
-// })
-
-// app.listen(port, () => {
-//   console.log(`Example app listening at http://localhost:${port}`)
-// })
