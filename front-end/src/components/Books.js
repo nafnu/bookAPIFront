@@ -40,7 +40,7 @@ class Books extends React.Component{
 
     render(){
         //assign variables using the state
-        const { isLoaded, books} = this.state;
+        const { isLoaded, error, books} = this.state;
         
         //conditional rendering: https://reactjs.org/docs/conditional-rendering.html
         //if we are waiting for our server to serve us the data render this part of code
