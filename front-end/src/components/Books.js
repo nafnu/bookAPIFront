@@ -1,5 +1,6 @@
 //component to view all dogs
 import React from "react";
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -42,8 +43,7 @@ class Books extends React.Component{
         //assign variables using the state
         const { isLoaded, error, books} = this.state;
         
-        //conditional rendering: https://reactjs.org/docs/conditional-rendering.html
-        //if we are waiting for our server to serve us the data render this part of code
+      
         // also render this if the SERVER is offline
         if(!isLoaded){
             return(
@@ -54,29 +54,29 @@ class Books extends React.Component{
             return(
                 <div>
                     <table>
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th>ISBN</th>
-                            <th>Year Publication</th>
-                            <th>Publishing House</th>
-                        </tr>
-                    </thead>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>ISBN</th>
+                                <th>Year Publication</th>
+                                <th>Publishing House</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
-                        {books.map(book => (
-                        <tr key={book._id}>
-                            <td>{book._id}</td>
-                            <td>{book.title}</td>
-                            <td >{book.author}</td>
-                            <td >{book.ISBN}</td>
-                            <td >{book.yearPublication}</td>
-                            <td >{book.publishingHouse}</td>
-                    </tr>
-                    ))}
-                    </tbody> 
+                        <tbody>
+                            {books.map(book => (
+                            <tr key={book._id}>
+                                <td>{book._id}</td>
+                                <td>{book.title}</td>
+                                <td >{book.author}</td>
+                                <td >{book.ISBN}</td>
+                                <td >{book.yearPublication}</td>
+                                <td >{book.publishingHouse}</td>
+                        </tr>
+                        ))}
+                        </tbody> 
                     </table>
               </div>  
             )
