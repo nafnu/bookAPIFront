@@ -15,5 +15,5 @@ const notebookSchema = new Schema({
 
 const Notebook = mongoose.model('Notebook', notebookSchema);
 
-module.exports = Notebook
+module.exports = Notebook;
 
