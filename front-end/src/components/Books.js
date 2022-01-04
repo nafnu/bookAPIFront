@@ -1,7 +1,8 @@
 //component to view all dogs
 import React from "react";
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import axios from 'axios';
+import Book from './Book';
 
 
 class Books extends React.Component{
@@ -52,7 +53,7 @@ class Books extends React.Component{
         //render this part of code if we received the data from the server
         } else {
             return(
-                <div>
+                <div style = {{textAlign: 'center',}}>
                     <table>
                         <thead>
                             <tr>

@@ -1,10 +1,11 @@
 import {Link, useNavigate} from 'react-router-dom';
+import BookView from './BookView';
 
 const Book = (props) => {
 
     let navigate = useNavigate();
     console.log(props);
-    let book  = props.member;
+    let book  = props.book;
     return(
         <div>
             <p>

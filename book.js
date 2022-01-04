@@ -17,6 +17,9 @@ const bookSchema = new Schema({
   yearPublication: Number,
   publishingHouse: String
 
+},
+{
+  collection: 'books'
 })
 
 
